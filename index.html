@@ -1,191 +1,209 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#ece4d6">
-<title>H. Shaikh Jassim &amp; M. Fahima — Wedding Invitation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ece4d6">
+  <title>H. Shaikh Jassim &amp; M. Fahima — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-<audio id="bgMusic" preload="auto" aria-hidden="true">
-  <source src="/assets/song.mp3" type="audio/mpeg">
-</audio>
+  <audio id="bgMusic" preload="auto" aria-hidden="true">
+    <source src="/assets/song.mp3" type="audio/mpeg">
+  </audio>
 
-<section id="opener" class="opener" aria-label="Wedding invitation opening">
-  <video id="openingVideo" class="opening-video" playsinline preload="auto" muted poster="/assets/opening-poster.jpg">
-    <source src="/assets/opening-video.mp4" type="video/mp4">
-  </video>
-  <!-- the video already says "Tap to open", so the whole screen is the button -->
-  <button id="openBtn" class="open-btn" aria-label="Tap to open the invitation"></button>
-</section>
-
-<canvas id="confetti" aria-hidden="true"></canvas>
-<div id="sparkles" class="sparkles hidden" aria-hidden="true"></div>
-
-<!-- Floating music toggle button -->
-<button id="musicToggle" class="music-float-btn hidden" aria-label="Toggle background music">
-  <svg id="mIconOn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-    <path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/>
-  </svg>
-  <svg id="mIconOff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
-    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-    <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
-  </svg>
-</button>
-
-<main id="website" class="website hidden" aria-hidden="true">
-
-  <!-- 1 · NAMES -->
-  <section class="sec pg-arch hero">
-    <div class="reveal">
-      <div class="arabic bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
-      <p class="intro">Together with their families</p>
-      <h1>
-        <span class="person">
-          <span class="name">H. Shaikh Jassim</span>
-          <span class="parent">Pharm-D<br><b>S/O</b> Marhoom S. Habeeb Rahman &amp;<br>Mrs. Rajiya Banu, Thopputhurai</span>
-        </span>
-        <em>&amp;</em>
-        <span class="person">
-          <span class="name">M. Fahima</span>
-          <span class="parent">B.Sc., AFT.<br><b>D/O</b> Janab H. Mansoor Ali &amp;<br>Mrs. Jarina Begum, Thopputhurai</span>
-        </span>
-      </h1>
-      <p class="lead">joyfully invite you to celebrate their beautiful beginning</p>
-    </div>
+  <section id="opener" class="opener" aria-label="Wedding invitation opening">
+    <video id="openingVideo" class="opening-video" playsinline preload="auto" muted poster="/assets/opening-poster.jpg">
+      <source src="/assets/opening-video.mp4" type="video/mp4">
+    </video>
+    <!-- the video already says "Tap to open", so the whole screen is the button -->
+    <button id="openBtn" class="open-btn" aria-label="Tap to open the invitation"></button>
   </section>
 
-  <!-- 2 · SCRATCH TO REVEAL -->
-  <section class="sec pg-silk scratch-section">
-    <div class="reveal">
-      <h2>Scratch to Reveal</h2>
-      <div class="scratch-card" id="scratchCard">
-        <div class="scratch-under">
-          <span class="tiny">THE SPECIAL DAY</span>
-          <div class="reveal-date">20 • 12 • 2026</div>
-          <div class="reveal-title">Our Nikkah</div>
-          <p>May this new chapter begin with love, mercy and barakah.</p>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="sparkles" class="sparkles hidden" aria-hidden="true"></div>
+
+  <!-- Floating music toggle button -->
+  <button id="musicToggle" class="music-float-btn hidden" aria-label="Toggle background music">
+    <svg id="mIconOn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+      <path d="M15.54 8.46a5 5 0 010 7.07" />
+      <path d="M19.07 4.93a10 10 0 010 14.14" />
+    </svg>
+    <svg id="mIconOff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+      <line x1="23" y1="9" x2="17" y2="15" />
+      <line x1="17" y1="9" x2="23" y2="15" />
+    </svg>
+  </button>
+
+  <main id="website" class="website hidden" aria-hidden="true">
+
+    <!-- 1 · NAMES -->
+    <section class="sec pg-arch hero">
+      <div class="reveal">
+        <div class="arabic bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+        <p class="intro">Together with their families</p>
+        <h1>
+          <span class="person">
+            <span class="name">H. Shaikh Jassim</span>
+            <span class="parent">Pharm-D<br><b>S/O</b> Marhoom S. Habeeb Rahman &amp;<br>Mrs. Rajiya Banu,
+              Thopputhurai</span>
+          </span>
+          <em>&amp;</em>
+          <span class="person">
+            <span class="name">M. Fahima</span>
+            <span class="parent">B.Sc., AFT.<br><b>D/O</b> Janab H. Mansoor Ali &amp;<br>Mrs. Jarina Begum,
+              Thopputhurai</span>
+          </span>
+        </h1>
+        <p class="lead">joyfully invite you to celebrate their beautiful beginning</p>
+      </div>
+    </section>
+
+    <!-- 2 · SCRATCH TO REVEAL -->
+    <section class="sec pg-silk scratch-section">
+      <div class="reveal">
+        <h2>Scratch to Reveal</h2>
+        <div class="scratch-card" id="scratchCard">
+          <div class="scratch-under">
+            <span class="tiny">THE SPECIAL DAY</span>
+            <div class="reveal-date">20 • 12 • 2026</div>
+            <div class="reveal-title">Our Nikkah</div>
+            <p>May this new chapter begin with love, mercy and barakah.</p>
+          </div>
+          <canvas id="scratchCanvas" aria-label="Scratch to reveal"></canvas>
         </div>
-        <canvas id="scratchCanvas" aria-label="Scratch to reveal"></canvas>
+        <p class="sub scratch-line">The countdown begins for a lifetime of togetherness</p>
       </div>
-      <p class="sub scratch-line">The countdown begins for a lifetime of togetherness</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- 3 · VERSE -->
-  <section class="sec pg-paper quote">
-    <div class="reveal">
-      <div class="arabic verse" style="font-size:calc(var(--p)*.068);line-height:1.7;padding:0 6px;">هُوَ الَّذِي خَلَقَكُم مِّن نَّفْسٍ وَاحِدَةٍ وَجَعَلَ مِنْهَا زَوْجَهَا لِيَسْكُنَ إِلَيْهَا</div>
-      <div class="rule"></div>
-      <p class="trans" style="font-size:calc(var(--p)*.052);line-height:1.45;max-width:18em;margin:0 auto;">“He is the One who created you from a single soul and made from it its spouse so that he may find comfort in her.”</p>
-      <small style="margin-top:12px;">Surah Al-A'raf • 7:189</small>
-    </div>
-  </section>
-
-  <!-- 4 · HEART THE DATE -->
-  <section class="sec pg-arch calendar">
-    <div class="reveal">
-      <h2>Mark Your Calendar</h2>
-      <div class="cal" id="calendar" aria-label="Wedding date calendar">
-        <div class="cal-month" id="calMonth">December 2026</div>
-        <div class="cal-week"><i>S</i><i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i></div>
-        <div class="cal-grid" id="calGrid"></div>
+    <!-- 3 · VERSE -->
+    <section class="sec pg-paper quote">
+      <div class="reveal">
+        <div class="arabic verse" style="font-size:calc(var(--p)*.068);line-height:1.75;padding:0 8px;">۞ هُوَ ٱلَّذِي خَلَقَكُم مِّن نَّفۡسࣲ وَٰحِدَةࣲ وَجَعَلَ مِنۡهَا زَوۡجَهَا لِيَسۡكُنَ إِلَيۡهَا ۞</div>
+        <div class="rule"></div>
+        <p class="trans" style="font-size:calc(var(--p)*.05);line-height:1.45;max-width:18em;margin:0 auto;">“It is He who created you from one soul and created from it its mate that he might dwell in security with her.”</p>
+        <small style="margin-top:12px;">Surah Al-A'raf • 7:189</small>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 5 · COUNTDOWN -->
-  <section class="sec pg-silk countdown">
-    <div class="reveal">
-      <span class="caps">THE BIG DAY IS NEAR</span>
-      <h2>Wedding Countdown</h2>
-      <div class="cd" id="countdown" aria-live="off">
-        <div class="cd-box"><b id="cdD">0</b><span>DAYS</span></div>
-        <div class="cd-box"><b id="cdH">00</b><span>HOURS</span></div>
-        <div class="cd-box"><b id="cdM">00</b><span>MINUTES</span></div>
-        <div class="cd-box"><b id="cdS">00</b><span>SECONDS</span></div>
-      </div>
-      <p class="cd-note" id="cdNote">until we say Qubool Hai</p>
-    </div>
-  </section>
-
-  <!-- 6 · NIKKAH -->
-  <section class="sec pg-arch event">
-    <div class="reveal">
-      <span class="caps">THE CELEBRATION</span>
-      <h3>Nikkah Ceremony</h3>
-      <div class="rule"></div>
-      <p class="ev-date">Sunday, 20 December 2026</p>
-      <p style="font-size:calc(var(--p)*.035);color:#8a6a55;margin-top:2px;">(Hijri 1448 · Rajab 10th)</p>
-      <strong>11:30 A.M.</strong>
-      <p style="font-size:calc(var(--p)*.038);color:var(--wine);font-style:italic;margin-top:2px;">Lunch: 12:00 Noon Onwards</p>
-      <small style="white-space:nowrap;margin-top:6px;">Amman Marriage Hall</small>
-      <small style="margin-top:2px;">R.S. Road, Thopputhurai</small>
-      <a href="https://maps.google.com/?q=Amman+Marriage+Hall,+R.S.+Road,+Thopputhurai" target="_blank" rel="noopener">Get Directions</a>
-    </div>
-  </section>
-
-  <!-- 7 · RSVP -->
-  <section class="sec pg-silk rsvp-section">
-    <div class="reveal">
-      <span class="caps">WILL YOU JOIN US?</span>
-      <h2>Kindly RSVP</h2>
-      <div class="rule"></div>
-      <p class="sub">Your presence and prayers will make our celebration truly special.</p>
-      
-      <div id="rsvp-form-container">
-        <div class="rsvp-buttons">
-          <button id="btn-yes" class="rsvp-btn rsvp-btn-yes">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Joyfully Accept
-          </button>
-          <button id="btn-no" class="rsvp-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            Regretfully Decline
-          </button>
+    <!-- 4 · HEART THE DATE -->
+    <section class="sec pg-arch calendar">
+      <div class="reveal">
+        <h2>Mark Your Calendar</h2>
+        <div class="cal" id="calendar" aria-label="Wedding date calendar">
+          <div class="cal-month" id="calMonth">December 2026</div>
+          <div class="cal-week"><i>S</i><i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i></div>
+          <div class="cal-grid" id="calGrid"></div>
         </div>
       </div>
+    </section>
 
-      <div id="rsvp-yes-response" class="rsvp-response">
-        🌸 We are overjoyed! We look forward to celebrating with you. Jazakallahu Khayran!
+    <!-- 5 · COUNTDOWN -->
+    <section class="sec pg-silk countdown">
+      <div class="reveal">
+        <span class="caps">THE BIG DAY IS NEAR</span>
+        <h2>Wedding Countdown</h2>
+        <div class="cd" id="countdown" aria-live="off">
+          <div class="cd-box"><b id="cdD">0</b><span>DAYS</span></div>
+          <div class="cd-box"><b id="cdH">00</b><span>HOURS</span></div>
+          <div class="cd-box"><b id="cdM">00</b><span>MINUTES</span></div>
+          <div class="cd-box"><b id="cdS">00</b><span>SECONDS</span></div>
+        </div>
+        <p class="cd-note" id="cdNote">until we say Qubool Hai</p>
       </div>
-      <div id="rsvp-no-response" class="rsvp-response">
-        We understand and appreciate you letting us know. May Allah bless you always.
+    </section>
+
+    <!-- 6 · NIKKAH -->
+    <section class="sec pg-arch event">
+      <div class="reveal">
+        <span class="caps">THE CELEBRATION</span>
+        <h3>Nikkah Ceremony</h3>
+        <div class="rule"></div>
+        <p class="ev-date">Sunday, 20 December 2026</p>
+        <p style="font-size:calc(var(--p)*.035);color:#8a6a55;margin-top:2px;">(Hijri 1448 · Rajab 10th)</p>
+        <strong>11:30 A.M.</strong>
+        <p style="font-size:calc(var(--p)*.038);color:var(--wine);font-style:italic;margin-top:2px;">Lunch: 12:00 Noon
+          Onwards</p>
+        <small style="white-space:nowrap;margin-top:6px;">Amman Marriage Hall</small>
+        <small style="margin-top:2px;">R.S. Road, Thopputhurai</small>
+        <a href="https://maps.google.com/?q=Amman+Marriage+Hall,+R.S.+Road,+Thopputhurai" target="_blank"
+          rel="noopener">Get Directions</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 8 · STORY -->
-  <section class="sec pg-silk story">
-    <div class="reveal">
-      <span class="caps">A NEW CHAPTER</span>
-      <h2>Two Hearts.<br>One Beautiful Journey.</h2>
-      <p class="sub">With gratitude to Allah and surrounded by our families, we begin a new chapter together.</p>
-      <div class="divider">— ✦ —</div>
-    </div>
-  </section>
+    <!-- 7 · RSVP -->
+    <section class="sec pg-silk rsvp-section">
+      <div class="reveal">
+        <span class="caps">WILL YOU JOIN US?</span>
+        <h2>Kindly RSVP</h2>
+        <div class="rule"></div>
+        <p class="sub">Your presence and prayers will make our celebration truly special.</p>
 
-  <!-- 9 · DUA + CLOSING -->
-  <section class="sec pg-paper closing">
-    <div class="reveal">
-      <span class="caps">A DUA FOR THE COUPLE</span>
-      <div class="arabic dua-arabic">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
-      <p class="trans">“May Allah bless you both, bless your union, and bring you together in goodness.”</p>
-      <div class="rule"></div>
-      <p class="sub">Your presence is our greatest gift. We would be honoured to have you celebrate with us.</p>
-      <div class="foot-names">Jassim &amp; Fahima</div>
-      <p class="behalf">On behalf of our families</p>
-      <small style="margin-top:4px;">H. Shiek Dawood &amp; Family</small>
-      <p style="font-size:calc(var(--p)*.032);letter-spacing:.18em;color:var(--gold);margin-top:10px;">#JassimWedsFahima2026</p>
-    </div>
-  </section>
-</main>
+        <div id="rsvp-form-container">
+          <div class="rsvp-buttons">
+            <button id="btn-yes" class="rsvp-btn rsvp-btn-yes">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Joyfully Accept
+            </button>
+            <button id="btn-no" class="rsvp-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+              Regretfully Decline
+            </button>
+          </div>
+        </div>
 
-<script type="module" src="/main.js"></script>
+        <div id="rsvp-yes-response" class="rsvp-response">
+          🌸 We are overjoyed! We look forward to celebrating with you. Jazakallahu Khayran!
+        </div>
+        <div id="rsvp-no-response" class="rsvp-response">
+          We understand and appreciate you letting us know. May Allah bless you always.
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · STORY -->
+    <section class="sec pg-silk story">
+      <div class="reveal">
+        <span class="caps">A NEW CHAPTER</span>
+        <h2>Two Hearts.<br>One Beautiful Journey.</h2>
+        <p class="sub">With gratitude to Allah and surrounded by our families, we begin a new chapter together.</p>
+        <div class="divider">— ✦ —</div>
+      </div>
+    </section>
+
+    <!-- 9 · DUA + CLOSING -->
+    <section class="sec pg-paper closing">
+      <div class="reveal">
+        <span class="caps">A DUA FOR THE COUPLE</span>
+        <div class="arabic dua-arabic">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </div>
+        <p class="trans">“May Allah bless you both, bless your union, and bring you together in goodness.”</p>
+        <div class="rule"></div>
+        <p class="sub">Your presence is our greatest gift. We would be honoured to have you celebrate with us.</p>
+        <div class="foot-names">Jassim &amp; Fahima</div>
+        <p class="behalf">On behalf of our families</p>
+        <small style="margin-top:4px;">H. Shiek Dawood &amp; Family</small>
+        <p style="font-size:calc(var(--p)*.032);letter-spacing:.18em;color:var(--gold);margin-top:10px;">
+          #JassimWedsFahima2026</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
 </body>
+
 </html>
